@@ -1,1 +1,17 @@
-<paste log output from Kubernetes-mediated prediction, here>
+Main Terminal Window:
+home@ubuntu:~/prj4/DevOps_Microservices/project-ml-microservice-kubernetes$ kubectl port-forward myfirstdocker 8000:80
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
+Additional Terminal window (from where I ran make_predictions.sh):
+home@ubuntu:~/prj4/DevOps_Microservices/project-ml-microservice-kubernetes$ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+home@ubuntu:~/prj4/DevOps_Microservices/project-ml-microservice-kubernetes$ 
+

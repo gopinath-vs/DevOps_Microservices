@@ -6,10 +6,13 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath=gopinathvs/myddockerrep
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker build --tag=myfirstdocker .
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath:myfirstdocker
